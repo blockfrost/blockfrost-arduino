@@ -1,0 +1,4 @@
+.pio
+attic/
+creds.h
+*.tar.gz
