@@ -65,5 +65,5 @@ pio run --target upload
 It is possible to test correct JSON (de)serialisation natively using:
 
 ```
-pio -c platformio-test.ini test -e native
+pio test -c platformio-test.ini -e native
 ```
