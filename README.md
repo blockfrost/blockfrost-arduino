@@ -34,6 +34,7 @@ The SDK uses [platformio][https://platformio.org/].
 
 You can either work directly with this repository or add this package as a dependency of your project using
 
+
 ```
 lib_deps =
   https://github.com/blockfrost/blockfrost-arduino
@@ -50,9 +51,27 @@ to `example/creds.h` and fill in your credentials.
 git clone https://github.com/blockfrost/blockfrost-arduino
 cd blockfrost-arduino
 cp example/creds.h.sample example/creds.h
-# edit WiFi settings and Blockfrost tokens
-# build
-pio run
-# upload
+```
+
+Plug in your ESP32 development board, build and upload
+using:
+
+```sh
 pio run --target upload
+```
+
+### SSL client
+
+In your application, you need to initialize SSL client
+used by API clients. The example uses initilazation code
+which is part of a library but you need to be able
+to update the certificate if using validation so using
+`initSSL` outside of this repository is not recommended.
+
+### Testing
+
+It is possible to test correct JSON (de)serialisation natively using:
+
+```
+pio -c platformio-test.ini test -e native
 ```
