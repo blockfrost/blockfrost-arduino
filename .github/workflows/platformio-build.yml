@@ -1,0 +1,16 @@
+name: PlatformIO
+
+on: pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Prepare example
+        run: cp example/creds.h.sample example/creds.h
+      - name: PlatformIO Run
+        uses: karniv00l/platformio-run-action@0.1.0
+        with:
+          environments: "esp32"
