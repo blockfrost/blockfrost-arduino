@@ -30,7 +30,7 @@ To use this SDK, you first need to log in to [blockfrost.io](https://blockfrost.
 
 ## Installation
 
-The SDK uses [platformio][https://platformio.org/].
+The SDK uses [platformio](https://platformio.org/).
 
 You can either work directly with this repository or add this package as a dependency of your project using
 
