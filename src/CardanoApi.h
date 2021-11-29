@@ -514,6 +514,14 @@ public:
 
     // Pools
 
+    /**
+    * List of stake pools.
+    *
+    * List of registered stake pools.
+    * \param count The numbers of pools per page.
+    * \param page The page number for listing the results.
+    * \param order The ordering of items from the point of view of the blockchain, not the page listing itself. By default, we return oldest first, newest last.
+    */
     Response<std::vector<std::string>>
       listPools(int count = DEFAULT_COUNT, int page = DEFAULT_PAGE, std::string order = DEFAULT_ORDER);
 
