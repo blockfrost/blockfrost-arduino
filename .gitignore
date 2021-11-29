@@ -2,3 +2,5 @@
 attic/
 creds.h
 *.tar.gz
+html/
+latex/

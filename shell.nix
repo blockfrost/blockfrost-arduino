@@ -5,6 +5,7 @@ stdenv.mkDerivation {
   buildInputs = [
     platformio
     (python3.withPackages (ps: [ ps.cryptography ] ))
+    doxygen
   ];
   shellHook = ''
     echo "# To build and upload an example:"
