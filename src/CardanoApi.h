@@ -1,7 +1,7 @@
 #ifndef BLOCKFROST_CPP_CLIENT_CardanoApi_H_
 #define BLOCKFROST_CPP_CLIENT_CardanoApi_H_
 
-#include "AbstractService.h"
+#include "Service.h"
 #include "types/Response.h"
 #include "types/Helpers.h"
 #include <list>
@@ -25,9 +25,9 @@
 
 namespace Blockfrost {
 
-class CardanoApi : public AbstractService {
+class CardanoApi : public Service {
 
-using AbstractService::AbstractService;
+using Service::Service;
 public:
     CardanoApi() = default;
     virtual ~CardanoApi() = default;

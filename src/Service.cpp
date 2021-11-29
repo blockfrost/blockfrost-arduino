@@ -1,14 +1,14 @@
-#include "AbstractService.h"
+#include "Service.h"
 
 
-Blockfrost::AbstractService::AbstractService(WiFiClientSecure *inSClient) {
+Blockfrost::Service::Service(WiFiClientSecure *inSClient) {
   sClient = inSClient;
 };
 
-Blockfrost::AbstractService::~AbstractService() {
+Blockfrost::Service::~Service() {
 };
 
-bool Blockfrost::AbstractService::setToken(std::string tok){
+bool Blockfrost::Service::setToken(std::string tok){
   bool knownEnv;
   std::size_t foundMainnet = tok.find("mainnet");
   if (foundMainnet!=std::string::npos) {
@@ -32,7 +32,7 @@ bool Blockfrost::AbstractService::setToken(std::string tok){
   return knownEnv;
 }
 
-void Blockfrost::AbstractService::begin(std::string url){
+void Blockfrost::Service::begin(std::string url){
     if (!sClient) {
       DEBUG_MSG("Error sClient is NULL\n");
     }

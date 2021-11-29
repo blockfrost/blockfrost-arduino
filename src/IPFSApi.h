@@ -2,7 +2,7 @@
 #define BLOCKFROST_CPP_CLIENT_IPFSApi_H_
 
 
-#include "AbstractService.h"
+#include "Service.h"
 
 #include "types/Response.h"
 #include "types/Helpers.h"
@@ -19,9 +19,9 @@ namespace Blockfrost {
  *  Class
  */
 
-class IPFSApi : public AbstractService {
+class IPFSApi : public Service {
 
-using AbstractService::AbstractService;
+using Service::Service;
 public:
     IPFSApi() = default;
     virtual ~IPFSApi() = default;

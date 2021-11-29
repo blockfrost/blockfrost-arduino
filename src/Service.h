@@ -1,5 +1,5 @@
-#ifndef BLOCKFROST_CPP_CLIENT_ABSTRACTSERVICE_H_
-#define BLOCKFROST_CPP_CLIENT_ABSTRACTSERVICE_H_
+#ifndef BLOCKFROST_CPP_CLIENT_SERVICE_H_
+#define BLOCKFROST_CPP_CLIENT_SERVICE_H_
 
 #if defined(ESP8266)
 
@@ -22,10 +22,10 @@ using namespace BearSSL;
 
 namespace Blockfrost {
 
-class AbstractService {
+class Service {
 public:
-  AbstractService(WiFiClientSecure *);
-  virtual ~AbstractService();
+  Service(WiFiClientSecure *);
+  virtual ~Service();
   WiFiClientSecure *sClient;
   HTTPClient http;
   std::string basepath = std::string();
@@ -38,4 +38,4 @@ private:
 }; // end class
 }// namespace Blockfrostclient
 
-#endif /* BLOCKFROST_CPP_CLIENT_ABSTRACTSERVICE_H_ */
+#endif /* BLOCKFROST_CPP_CLIENT_SERVICE_H_ */
