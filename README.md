@@ -60,14 +60,6 @@ using:
 pio run --target upload
 ```
 
-### SSL client
-
-In your application, you need to initialize SSL client
-used by API clients. The example uses initilazation code
-which is part of a library but you need to be able
-to update the certificate if using validation so using
-`initSSL` outside of this repository is not recommended.
-
 ### Testing
 
 It is possible to test correct JSON (de)serialisation natively using:

@@ -1,6 +1,9 @@
 #include <WiFi.h>
+#include "certs.h"
 #include "creds.h"
 #include "Blockfrost.h"
+
+WiFiClientSecure *sClient;
 
 Blockfrost::CommonApi *comm;
 Blockfrost::CardanoApi *cbapi;
@@ -25,7 +28,8 @@ void setup(){
     Serial.println(WiFi.localIP());
 
     // Init SSL client
-    initSSL();
+    sClient = new WiFiClientSecure();
+    sClient->setCACert(cert_Cloudflare_Inc_ECC_CA_3);
 
     // Configure clock
     setClock();

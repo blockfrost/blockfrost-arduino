@@ -1,8 +1,6 @@
 
 #include "certs.h"
 
-WiFiClientSecure *sClient;
-
 void initSSL() {
 #if defined(ESP8266)
     sClient = new BearSSL::WiFiClientSecure();

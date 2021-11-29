@@ -5,11 +5,3 @@
 
 #include "util/clock.h"
 #include "util/debug.h"
-#include "util/sclient.h"
-
-/*
-Blockfrost::CommonApi *comm;
-Blockfrost::CardanoApi *cbapi;
-Blockfrost::NutLinkApi *nlapi;
-Blockfrost::IPFSApi *ipfsapi;
-*/
