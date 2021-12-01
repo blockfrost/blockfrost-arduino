@@ -1,0 +1,29 @@
+{
+  "name": "Blockfrost",
+  "version": "0.1.0",
+  "description": "Blockfrost.io client",
+  "keywords": "blockchain, cardano, api",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/blockfrost/blockfrost-arduino.git"
+  },
+  "authors":
+  [
+    {
+      "name": "Blockfrost.io",
+      "email": "support@blockfrost.io"
+    }
+  ],
+  "license": "Apache-2.0",
+  "homepage": "https://blockfrost.io",
+  "dependencies": [
+    {
+        "name": "patched-bourne",
+        "version": "https://github.com/sorki/bourne.git#esp32"
+    }
+  ],
+  "frameworks": "*",
+  "platforms": ["espressif32"]
+}
+

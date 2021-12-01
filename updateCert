@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+set -ex
+python3 cert.py -s cardano-mainnet.blockfrost.io > src/util/certs.h
+cp src/util/certs.h example/certs.h

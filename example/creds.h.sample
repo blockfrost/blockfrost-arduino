@@ -1,0 +1,11 @@
+#ifndef CREDS_H
+#define CREDS_H
+
+#define WIFI_SSID ""
+#define WIFI_PASS ""
+
+#define BLOCKFROST_TOKEN "mainnet0123456742..."
+#define BLOCKFROST_TESTNET_TOKEN "testnet0123456742..."
+#define BLOCKFROST_IPFS_TOKEN "ipfs01234567..."
+
+#endif
