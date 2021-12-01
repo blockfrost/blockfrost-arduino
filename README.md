@@ -1,3 +1,4 @@
+[![GitHub Actions](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fblockfrost%2Fblockfrost-arduino%2Fbadge&style=flat-square)](https://github.com/blockfrost/blockfrost-arduino/actions/workflows/platformio-build.yml)
 [![Made by Five Binaries](https://img.shields.io/badge/made%20by-Five%20Binaries-darkviolet.svg?style=flat-square)](https://fivebinaries.com/)
 
 <img src="https://blockfrost.io/images/logo.svg" width="250" align="right" height="90">
