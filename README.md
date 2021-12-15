@@ -21,6 +21,8 @@
 
 Arduino SDK for the Blockfrost.io API targeting ESP32 development boards.
 
+[![Block, slot within an epoch, wen, transaction volume](./img/proj_thumb.jpg)](./img/proj.jpg)
+
 ## Getting started
 
 To use this SDK, you first need to log in to [blockfrost.io](https://blockfrost.io), create your project and retrieve the API token.
