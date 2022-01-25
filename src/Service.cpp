@@ -45,7 +45,7 @@ void Blockfrost::Service::begin(std::string url){
         );
 
     http.addHeader("project_id", token.c_str());
-    http.addHeader("User-Agent", BLOCKFROST_CLIENT_VERSION);
+    http.setUserAgent(BLOCKFROST_CLIENT_VERSION);
 
     DEBUG_MSG("Free heap before GET %d\n\r", ESP.getFreeHeap());
 }
