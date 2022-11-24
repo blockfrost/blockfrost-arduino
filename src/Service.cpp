@@ -22,6 +22,18 @@ bool Blockfrost::Service::setToken(std::string tok){
     knownEnv = true;
   }
 
+  std::size_t foundPreprod = tok.find("preprod");
+  if (foundPreprod!=std::string::npos) {
+    basepath = BASEPATH_PREPROD;
+    knownEnv = true;
+  }
+
+  std::size_t foundPreview = tok.find("preview");
+  if (foundPreview!=std::string::npos) {
+    basepath = BASEPATH_PREVIEW;
+    knownEnv = true;
+  }
+
   std::size_t foundIPFS = tok.find("ipfs");
   if (foundIPFS!=std::string::npos) {
     basepath = BASEPATH_IPFS;
