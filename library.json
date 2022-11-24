@@ -1,6 +1,6 @@
 {
   "name": "Blockfrost",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Blockfrost.io client",
   "keywords": "blockchain, cardano, api",
   "repository":

@@ -13,6 +13,6 @@ stdenv.mkDerivation {
     echo "pio run --target upload"
     echo ""
     echo "# To test:"
-    echo "pio -c platformio-test.ini test -e native"
+    echo "pio test -c platformio-test.ini -e native"
   '';
 }
