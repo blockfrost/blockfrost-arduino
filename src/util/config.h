@@ -1,4 +1,4 @@
-#define BLOCKFROST_CLIENT_VERSION "blockfrost-arduino/0.1.0"
+#define BLOCKFROST_CLIENT_VERSION "blockfrost-arduino/0.1.1"
 
 #define DEFAULT_ORDER "asc"
 #define DEFAULT_COUNT 5
